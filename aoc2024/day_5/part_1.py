@@ -25,7 +25,7 @@ class Rule:
             return True
 
         start_section = update[0:index]
-        end_section = update[index + 1:]
+        end_section = update[index + 1 :]  # noqa E203
 
         if self.after in start_section:
             return False
